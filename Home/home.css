@@ -1,0 +1,46 @@
+.title {
+    padding:50px;
+    font-size : 50px;
+    font-family:"'Trebuchet MS', 'Lucida Grande', sans-serif";
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.home_page_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 60px;
+}
+
+.play_button {
+    padding: 30px 60px;
+    font-size: 36px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #a4002c;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.about_button {
+    padding: 20px 40px;
+    font-size: 24px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #070045;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.play_button:hover, .about_button:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poker</title>
+    <link rel="stylesheet" href="bots.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bots?</h1>
+        <div class="bot-options">
+            <button onclick="showBotCount()">Yes</button>
+            <button onclick="hideBotCount()">No</button>
+        </div>
+        <div id="bot-count">
+            <label for="number-of-bots">Number of bots:</label>
+            <select id="number-of-bots">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+    </div>
+    <source src="bots.js"></source>
+</body>
+</html>
