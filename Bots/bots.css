@@ -14,9 +14,18 @@
     cursor: pointer;
 }
 
-#bot-count {
-    display: hidden;
-    margin-top: 20px;
+.bot-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.bot_submit button {
+    padding: 10px 0px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%
 }
 
 select {

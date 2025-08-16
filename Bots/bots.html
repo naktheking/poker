@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Poker</title>
+    <title>Black Jack</title>
     <link rel="stylesheet" href="bots.css">
 </head>
 <body>
@@ -11,14 +11,19 @@
             <button onclick="showBotCount()">Yes</button>
             <button onclick="hideBotCount()">No</button>
         </div>
-        <div id="bot-count">
-            <label for="number-of-bots">Number of bots:</label>
-            <select id="number-of-bots">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
+        <div class="hidden_stuff">
+            <div class="bot-count">
+                <label for="number-of-bots">Number of bots:</label>
+                <select id="number-of-bots">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="bot_submit">
+                <button onclick="submitBot()">Submit</button>
+            </div>
         </div>
     </div>
     <source src="bots.js"></source>
