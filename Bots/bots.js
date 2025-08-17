@@ -1,12 +1,18 @@
-function showBotCount() {
-    document.getElementById('bot-count').style.display = 'show';
-    
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const hiddenContent = document.querySelector('.hidden_stuff');
 
-function hideBotCount() {
-    document.getElementById('bot-count').style.display = 'none';
-}
+    // Define the functions used in HTML onclick
+    window.showBotCount = function() {
+        hiddenContent.classList.add('show');
+    }
 
-function submitBot() {
-    window.location.href = '../Game/game.html';
-}
+    window.hideBotCount = function() {
+        hiddenContent.classList.remove('show');
+        window.location.href = '../Game/game.html?bots=$0';
+    }
+
+    window.submitBot = function() {
+        const numBots = document.getElementById('number-of-bots').value;
+        window.location.href = `../Game/game.html?bots=${numBots}`;
+    }
+});
